@@ -5,7 +5,7 @@ function App() {
     <div className="w-screen h-screen overflow-y-auto p-12 bg-[#F6F6F6]">
       <div className="w-full min-h-full h-max flex flex-col items-center justify-center gap-8">
         <img src={logo} className="w-[134px] mb-5" />
-        <form className="w-[533px] flex flex-col items-center justify-center bg-white p-8 rounded-lg">
+        <form className="w-[533px] max-w-[92vw] flex flex-col items-center justify-center bg-white p-8 rounded-lg">
           <h1 className="text-[#4A4A4A] font-semibold text-2xl py-6">
             Login here
           </h1>
@@ -36,8 +36,10 @@ function App() {
             Login
           </button>
         </form>
-        <p className="text-[#666666]">Terms and Conditions | Privacy Policy</p>
-        <p className="text-[#666666]"> (c) Sterling Bank 2022</p>
+        <p className="text-[#666666] text-center">
+          Terms and Conditions | Privacy Policy
+        </p>
+        <p className="text-[#666666] text-center"> (c) Sterling Bank 2022</p>
       </div>
     </div>
   );
